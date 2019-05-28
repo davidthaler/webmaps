@@ -10,7 +10,7 @@
             integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
             crossorigin=""></script>
         <script type="text/javascript" src="https://stamen-maps.a.ssl.fastly.net/js/tile.stamen.js?v1.3.0"></script>
-        <!--https://stamen-tiles.a.ssl.fastly.net-->
+        <!--https://stamen-tiles.a.ssl.fastly.net   http://tile.stamen.com/toner/{z}/{x}/{y}.png-->
         <!--https://stamen-maps.a.ssl.fastly.net/js/tile.stamen.js-->
         <style>
             #mapid { height: 600px; width: 500px;}
@@ -23,7 +23,7 @@
             var mymap = L.map('mapid');
             var seaBounds = L.latLngBounds([47.754, -122.459], [47.519, -122.252]);
             mymap.fitBounds(seaBounds);
-            var layer = new L.StamenTileLayer("toner-lite");
+            var layer = new L.StamenTileLayer('https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png');
             mymap.addLayer(layer);
             var arbora = L.marker(myhomeloc).addTo(mymap);
             arbora.bindPopup("<b>Arbora Court</b></br>4750 15th Ave NE").openPopup();
