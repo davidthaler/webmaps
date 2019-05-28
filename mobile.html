@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <!--For mobile display-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Mobile Map</title>
+        <style>
+            body{
+                padding: 0;
+                margin: 0;
+            }
+
+            html, body, #mapid{
+                height: 100%;
+                width: 100vw;
+            }
+        </style>
+        <!--Leaflet imports-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+            integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+            crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+            integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+            crossorigin="">
+        </script>
+        <!--Stamen maps imports-->
+        <!--
+            <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script> 
+        -->
+        
+    </head>
+    <body>
+        <div id="mapid"></div>
+        <script>
+            var mymap = L.map('mapid').fitWorld();
+            //var layer = new L.StamenTileLayer("toner-lite");
+            //mymap.addLayer(layer);
+            // L.tileLayer('https://api.tiles.mapbox.com/v4/MapID/997/256/{z}/{x}/{y}.png?access_token={accessToken}', {
+            //     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            //     maxZoom: 18,
+            //     accessToken:'pk.eyJ1IjoiZHRoYWwiLCJhIjoiY2l6dWx1dnVlMDA0dzMzbHN3djlrbG9yNCJ9.Y6p3A_HFXQdUvlqFqIn9dA'
+            // }).addTo(mymap);
+            L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                maxZoom: 18,
+                id: 'mapbox.streets',
+                accessToken: 'pk.eyJ1IjoiZHRoYWwiLCJhIjoiY2l6dWx1dnVlMDA0dzMzbHN3djlrbG9yNCJ9.Y6p3A_HFXQdUvlqFqIn9dA'
+            }).addTo(mymap);
+            function onLocationFound(e) {
+                var radius = e.accuracy / 2;
+                L.marker(e.latlng).addTo(mymap)
+                    .bindPopup("You are within " + radius + " meters from this point").openPopup();
+                L.circle(e.latlng, radius).addTo(mymap);
+            }   
+            mymap.on('locationfound', onLocationFound);
+            function onLocationError(e) {
+                alert(e.message);
+            }
+            mymap.on('locationerror', onLocationError);
+            mymap.locate({setView: true, maxZoom: 16});
+        </script>
+    </body>
+</html>
