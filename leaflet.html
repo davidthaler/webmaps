@@ -1,7 +1,6 @@
 <html>
     <head>
-        <!--Arbora Ct: (47.664815, -122.31185)-->
-        <title>Leaflet 1st Try</title>
+        <title>Basic Leaflet Example</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
             integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
@@ -10,8 +9,6 @@
             integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
             crossorigin=""></script>
         <script type="text/javascript" src="https://stamen-maps.a.ssl.fastly.net/js/tile.stamen.js?v1.3.0"></script>
-        <!--https://stamen-tiles.a.ssl.fastly.net   http://tile.stamen.com/toner/{z}/{x}/{y}.png-->
-        <!--https://stamen-maps.a.ssl.fastly.net/js/tile.stamen.js-->
         <style>
             #mapid { height: 600px; width: 500px;}
         </style>
@@ -36,7 +33,6 @@
                                  + e.latlng.lng.toFixed(3) 
                                  + ")")
                      .openOn(mymap);
-
             }
             mymap.on('click', onMapClick);
         </script>
