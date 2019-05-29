@@ -24,28 +24,20 @@
             crossorigin="">
         </script>
         <!--Stamen maps imports-->
-        <!--
-            <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script> 
-        -->
+        <script type="text/javascript" src="https://stamen-maps.a.ssl.fastly.net/js/tile.stamen.js?v1.3.0"></script>
         
     </head>
     <body>
         <div id="mapid"></div>
         <script>
             var mymap = L.map('mapid').fitWorld();
-            //var layer = new L.StamenTileLayer("toner-lite");
-            //mymap.addLayer(layer);
+            var layer = new L.StamenTileLayer("toner-lite");
+            mymap.addLayer(layer);
             // L.tileLayer('https://api.tiles.mapbox.com/v4/MapID/997/256/{z}/{x}/{y}.png?access_token={accessToken}', {
             //     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
             //     maxZoom: 18,
             //     accessToken:'pk.eyJ1IjoiZHRoYWwiLCJhIjoiY2l6dWx1dnVlMDA0dzMzbHN3djlrbG9yNCJ9.Y6p3A_HFXQdUvlqFqIn9dA'
             // }).addTo(mymap);
-            L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-                maxZoom: 18,
-                id: 'mapbox.streets',
-                accessToken: 'pk.eyJ1IjoiZHRoYWwiLCJhIjoiY2l6dWx1dnVlMDA0dzMzbHN3djlrbG9yNCJ9.Y6p3A_HFXQdUvlqFqIn9dA'
-            }).addTo(mymap);
             function onLocationFound(e) {
                 var radius = e.accuracy / 2;
                 L.marker(e.latlng).addTo(mymap)
