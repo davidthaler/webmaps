@@ -45,7 +45,7 @@
                 alert(e.message);
             }
             mymap.on('locationerror', onLocationError);
-            mymap.locate({setView: true, maxZoom: 16});
+            mymap.locate({setView: true, watch: true, maxZoom: 16});
         </script>
     </body>
 </html>
