@@ -5,6 +5,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Children's Hospital ER Addition",
+                "address": "4800 Sand Point Way NE",
                 "year": 2010
             },
             "geometry": {
@@ -19,6 +20,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Epiphany School",
+                "address": "3601 E Denny Way",
                 "year": 2008
             },
             "geometry": {
@@ -33,6 +35,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Ruby (Amazon)",
+                "address": "333 Boren Ave N & 350 Terry Ave N",
                 "year": 2012
             },
             "geometry": {
@@ -47,6 +50,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Rufus (Amazon)",
+                "address": "1001 Mercer & 510 Terry Ave N",
                 "year": 2008
             },
             "geometry": {
@@ -61,6 +65,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Skyline First Hill",
+                "address": "715 9th Ave",
                 "year": 2006
             },
             "geometry": {
@@ -75,6 +80,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Doppler Tower (Amazon)",
+                "address": "2021 7th Ave",
                 "year": 2012
             },
             "geometry": {
@@ -89,6 +95,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Enso Condominiums",
+                "address": "2201 9th Ave",
                 "year": 2007
             },
             "geometry": {
@@ -103,6 +110,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "1111 3rd Ave",
+                "address": "1111 3rd Ave",
                 "year": 1977
             },
             "geometry": {
@@ -117,6 +125,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Safeco Plaza",
+                "address": "1001 4th Ave",
                 "year": 1969
             },
             "geometry": {
@@ -131,6 +140,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "1000 2nd Avenue",
+                "address": "1000 2nd Ave",
                 "year": 1987
             },
             "geometry": {
@@ -145,6 +155,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Wells Fargo Center",
+                "address": "999 3rd Ave",
                 "year": 1983
             },
             "geometry": {
@@ -159,6 +170,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Fourth & Madison Building",
+                "address": "925 4th Ave",
                 "year": 2002
             },
             "geometry": {
@@ -173,6 +185,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "The Post",
+                "address": "810 Western Ave",
                 "year": 2011
             },
             "geometry": {
@@ -187,6 +200,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Columbia Center",
+                "address": "701 5th Ave",
                 "year": 1981
             },
             "geometry": {
@@ -201,6 +215,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "800 Fifth Avenue",
+                "address": "800 5th Ave",
                 "year": 1981
             },
             "geometry": {
@@ -215,6 +230,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Seattle Municipal Tower",
+                "address": "700 5th Ave",
                 "year": 1980
             },
             "geometry": {
@@ -229,6 +245,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Passport Agency",
+                "address": "300 5th Ave",
                 "year": 2003
             },
             "geometry": {
@@ -243,6 +260,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Union Station Development",
+                "address": "625 5th Ave",
                 "year": 2000
             },
             "geometry": {
@@ -257,6 +275,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "2020 E Madison St",
+                "address": "2020 E Madison St",
                 "year": 2016
             },
             "geometry": {
@@ -271,6 +290,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "The Whittaker",
+                "address": "4755 Fauntleroy Way SW",
                 "year": 2014
             },
             "geometry": {
@@ -285,6 +305,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Nessie (Amazon)",
+                "address": "500 9th Ave N & 515 Westlake Ave N",
                 "year": 2012
             },
             "geometry": {
@@ -299,6 +320,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Alder Hall UW",
+                "address": "1315 NE Campus Pkwy",
                 "year": 2009
             },
             "geometry": {
@@ -313,6 +335,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Elm Hall UW",
+                "address": "1218 NE Campus Pkwy",
                 "year": 2010
             },
             "geometry": {
@@ -327,6 +350,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Admiral Safeway",
+                "address": "2622 California Ave SW",
                 "year": 2010
             },
             "geometry": {
@@ -341,6 +365,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Expo Apts",
+                "address": "100 Republican St",
                 "year": 2010
             },
             "geometry": {
@@ -355,6 +380,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Horizon House",
+                "address": "900 University St",
                 "year": 1954
             },
             "geometry": {
@@ -369,6 +395,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Cielo Apartments",
+                "address": "802 Seneca St",
                 "year": 2012
             },
             "geometry": {
@@ -383,6 +410,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "One/Two Union Square",
+                "address": "600 University St / 621 Union St",
                 "year": 1979
             },
             "geometry": {
@@ -397,6 +425,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "WA State Convention Center",
+                "address": "701 Pike St",
                 "year": 1990
             },
             "geometry": {
@@ -411,6 +440,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Westin Building",
+                "address": "2001 6th Ave",
                 "year": 1982
             },
             "geometry": {
@@ -425,6 +455,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Van Vorst Building (Amazon)",
+                "address": "410 Terry Ave N",
                 "year": 2005
             },
             "geometry": {
@@ -439,6 +470,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Park Place",
+                "address": "1200 6th Ave",
                 "year": 1971
             },
             "geometry": {
@@ -453,6 +485,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Crowne Plaza Hotel",
+                "address": "1113 6th Ave",
                 "year": 1973
             },
             "geometry": {
@@ -467,6 +500,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "1600 Seventh",
+                "address": "1600 7th Ave",
                 "year": 1973
             },
             "geometry": {
@@ -481,6 +515,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "8th + Olive",
+                "address": "720 Olive Way",
                 "year": 1981
             },
             "geometry": {
@@ -495,6 +530,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Plaza 600",
+                "address": "600 Stewart St",
                 "year": 1969
             },
             "geometry": {
@@ -509,6 +545,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "US Bank Centre",
+                "address": "1420 5th Ave",
                 "year": 1986
             },
             "geometry": {
@@ -523,6 +560,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Century Square",
+                "address": "1501 4th Ave",
                 "year": 1983
             },
             "geometry": {
@@ -537,6 +575,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Benaroya Hall",
+                "address": "1301 3rd Ave",
                 "year": 1995
             },
             "geometry": {
@@ -551,6 +590,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Seattle Art Museum",
+                "address": "1301 1st Ave / 1301 2nd Ave",
                 "year": 1991
             },
             "geometry": {
@@ -565,6 +605,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Four Seasons Hotel",
+                "address": "99 Union St",
                 "year": 2005
             },
             "geometry": {
@@ -579,6 +620,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "1201 3rd Ave",
+                "address": "1201 3rd Ave",
                 "year": 1990
             },
             "geometry": {
@@ -593,6 +635,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Fourth & Blanchard Building",
+                "address": "2101 4th Ave",
                 "year": 1977
             },
             "geometry": {
@@ -607,6 +650,7 @@ var pops = {
             "type": "Feature",
             "properties": {
                 "name": "Sixth & Lenora Building",
+                "address": "2033 6th Ave",
                 "year": 1963
             },
             "geometry": {

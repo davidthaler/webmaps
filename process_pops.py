@@ -23,7 +23,7 @@ def load_pops(infile):
 
 def make_feature(r):
     'Makes one geoJSON feature for a feature collection from one row of POPS data frame.'
-    properties = {'name': r.Name, 'year': r.Year}
+    properties = {'name': r.Name, 'address': r.Address, 'year': r.Year}
     geometry = {'type': 'Point', 'coordinates': r.Coordinates}
     return {'type': 'Feature', 'properties': properties, 'geometry': geometry}
 
