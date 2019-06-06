@@ -71,6 +71,22 @@
                 onEachFeature: onEachFeature,
                 pointToLayer: pointToLayer
             }).addTo(mymap);
+
+            var meOpts = popsMarkerOpts;
+            meOpts['fillColor'] = '#003399';
+            var me = L.circleMarker(seattle, meOpts);
+            mymap.addLayer(me);
+
+            function onLocationFound(e){
+                me.setLatLng(e.latlng);
+            }
+
+            function onLocationError(e){
+                alert(e.message);
+            }
+
+            mymap.on({onLocationFound: onLocationFound, onLocationError: onLocationError});
+            mymap.locate({setView: true, maxZoom: 16, watch: true});
         </script>
     </body>
 </html>
