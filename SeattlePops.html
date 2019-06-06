@@ -78,9 +78,8 @@
             mymap.addLayer(me);
 
             function onLocationFound(e){
-                me.remove(mymap);
+                alert('onLocationFound');
                 me.setLatLng(e.latlng);
-                me.addTo(mymap);
             }
 
             function onLocationError(e){
