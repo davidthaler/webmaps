@@ -86,7 +86,7 @@
                 alert(e.message);
             }
 
-            mymap.on({onLocationFound: onLocationFound, onLocationError: onLocationError});
+            mymap.on({'locationfound': onLocationFound, 'locationerror': onLocationError});
             mymap.locate();
         </script>
     </body>
