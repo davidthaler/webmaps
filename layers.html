@@ -35,12 +35,12 @@
                 'access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
             var gray = L.tileLayer(mapurl, {attribution: attrib, id: "mapbox.light"}),
                 street = L.tileLayer(mapurl, {attribution: attrib, id: "mapbox.streets"});
-            var mymap = L.map('map', {layers: [gray, street]});
             var arbora = L.marker([47.664815, -122.31185]).bindPopup('My Place'),
                 allegro = L.marker([47.658685, -122.312879]).bindPopup('Cafe Allegro'),
                 troll = L.marker([47.651198, -122.347321]).bindPopup('Fremont Troll'),
                 needle = L.marker([47.620488, -122.34931]).bindPopup('Space Needle');
             var sites = L.layerGroup([arbora, allegro, troll, needle]);
+            var mymap = L.map('map', {layers: [street, sites]});
             var seaBounds = L.latLngBounds([47.7, -122.4], [47.600, -122.3]);
             mymap.fitBounds(seaBounds);
             var basemaps = {'Streets' : street, 'Grayscale': gray};
